@@ -1,0 +1,7 @@
+extends: spelling
+message: "'%s' may be a typo."
+dicpath: /usr/share/hunspell
+append: true
+custom: false
+dictionaries:
+  - en_US-suse-doc
