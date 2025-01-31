@@ -1,13 +1,15 @@
 extends: substitution
 message: Consider using '%s' instead of '%s'
 link: https://documentation.suse.com/style/current/html/docu_styleguide/app-terminology.html#sec-terminology
-ignorecase: false
+ignorecase: true
 level: error
+action:
+  name: replace
 swap:
-  ChromeBook: Chromebook
-  DELL: Dell
-  Geforce: GeForce
-  Macbook: MacBook
-  Pci: PCI
+  Chromebook: Chromebook
+  Dell: Dell
+  GeForce: GeForce
+  MacBook: MacBook
+  PCI: PCI
   RasPi|Raspberry pi: Raspberry Pi
-  Thinkpad: ThinkPad
+  ThinkPad: ThinkPad
