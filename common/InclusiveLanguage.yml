@@ -7,7 +7,7 @@ tokens:
   - master(?:s)
   - slave(?:s)
   - black hat(?:s)
-  - black\s?list(?:s)
+  - blacklist(?:s)
   - dummy
   - man hour(?:s)
   - manmade
@@ -15,4 +15,4 @@ tokens:
   - middleman
   - native
   - sanity
-  - white\s?list(?:s)
+  - whitelist
