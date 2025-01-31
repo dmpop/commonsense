@@ -1,24 +1,24 @@
 extends: existence
 message: 'Only use slashes with filenames, links and terms such as TCP/IP in "%s"'
-link: https://documentation.suse.com/style/current/html/docu_styleguide/sec-language.html#sec-slash
-ignorecase: true
 level: suggestion
+link: https://documentation.suse.com/style/current/html/docu_styleguide/sec-language.html#sec-slash
+# Case insensitivity was added with "(?i)" because "ignorecase:true" does not apply to exceptions
 tokens:
   - '(?<!/)\w+\s?\/\s?\w+'
 exceptions:
   - '\d{2,4}\/\d{2,4}' # To avoid matching dates
   - '\d{1,3}\/\d{1,3}' # to avoid 10.0.1.0/24
-  - 'allow/deny'
-  - 'AMD64/Intel' # To avoid matching "AMD64/Intel 64"
-  - 'client/server'
-  - 'input/output'
-  - 'I/O'
-  - '[kKmMgGtT][bB]/s'
-  - 'N/A'
-  - 'read/write'
-  - 'R/W'
-  - 'SSL/TLS'
-  - 'sync/import'
-  - 'read/write'
-  - 'TCP/IP'
-  - 'Fi/Bluetooth' # To avoid matching "Wi-Fi/Bluetooth card"
+  - '(?i)allow/deny'
+  - '(?i)AMD64/Intel' # To avoid matching "AMD64/Intel 64"
+  - '(?i)client/server'
+  - '(?i)input/output'
+  - '(?i)I/O'
+  - '(?i)[kmgt]b/s'
+  - '(?i)N/A'
+  - '(?i)read/write'
+  - '(?i)R/W'
+  - '(?i)SSL/TLS'
+  - '(?i)sync/import'
+  - '(?i)read/write'
+  - '(?i)TCP/IP'
+  - '(?i)Fi/Bluetooth' # To avoid matching "Wi-Fi/Bluetooth card"

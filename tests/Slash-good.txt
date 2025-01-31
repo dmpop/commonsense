@@ -5,6 +5,7 @@ allow/deny
 AMD64/Intel
 client/server
 input/output
+INPUT/OUTPUT
 I/O
 KB/s
 MB/s
@@ -15,6 +16,8 @@ read/write
 R/W
 SSL/TLS
 sync/import
+SYNC/IMPORT
 read/write
+READ/WRITE
 TCP/IP
 Wi-Fi/Bluetooth
